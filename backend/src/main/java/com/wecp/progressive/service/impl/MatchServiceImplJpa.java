@@ -1,44 +1,52 @@
 package com.wecp.progressive.service.impl;
 
+import com.wecp.progressive.entity.Match;
+import com.wecp.progressive.repository.MatchRepository;
+import com.wecp.progressive.service.MatchService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.sql.SQLException;
 import java.util.List;
 
-import com.wecp.progressive.dao.MatchDAO;
-import com.wecp.progressive.entity.Match;
-import com.wecp.progressive.service.MatchService;
-
+@Service
 public class MatchServiceImplJpa implements MatchService {
-    private MatchDAO matchDAO;
 
-    public MatchServiceImplJpa(MatchDAO matchDAO) {
-        this.matchDAO = matchDAO;
+    private MatchRepository matchRepository;
+
+    @Autowired
+    public MatchServiceImplJpa(MatchRepository matchRepository) {
+        this.matchRepository = matchRepository;
     }
 
     @Override
-    public List<Match> getAllMatches() {
-        return List.of();
+    public List<Match> getAllMatches() throws SQLException {
+        return matchRepository.findAll();
     }
 
     @Override
-    public Match getMatchById(int matchId) {
-        return null;
+    public Match getMatchById(int matchId) throws SQLException {
+        return matchRepository.findByMatchId(matchId);
     }
 
     @Override
-    public Integer addMatch(Match match) {
-       return -1;
+    public Integer addMatch(Match match) throws SQLException {
+        return matchRepository.save(match).getMatchId();
     }
 
     @Override
-    public void updateMatch(Match match) {
-        
+    public void updateMatch(Match match) throws SQLException {
+        matchRepository.save(match);
     }
 
     @Override
-    public void deleteMatch(int matchId) {
-        
+    public void deleteMatch(int matchId) throws SQLException {
+        matchRepository.deleteById(matchId);
     }
-    
 
-    
-
+    @Override
+    public List<Match> getAllMatchesByStatus(String status) throws SQLException {
+        List<Match> matchList = matchRepository.findAllByStatus(status);
+        return matchList;
+    }
 }
