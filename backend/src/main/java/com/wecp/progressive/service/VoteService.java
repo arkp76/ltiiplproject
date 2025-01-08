@@ -5,14 +5,16 @@ import com.wecp.progressive.entity.Vote;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.http.ResponseEntity;
+
 public interface VoteService {
 
-    List<Vote> getAllVotes();
+    ResponseEntity<List<Vote>> getAllVotes();
 
-    int createVote(Vote vote);
+    ResponseEntity<Integer> createVote(Vote vote);
 
     // Each key (k) represents a category (categories - “Team”, “Batsman”, “Bowler”, “All-rounder” and “Wicketkeeper”)
     // and each value (v) represents the total number of votes for that category.
-    Map<String, Long> getVotesCountOfAllCategories();
+    ResponseEntity<Map<String, Long>> getVotesCountOfAllCategories();
 
 }

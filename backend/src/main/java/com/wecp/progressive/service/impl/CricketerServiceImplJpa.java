@@ -62,4 +62,3 @@ public class CricketerServiceImplJpa implements CricketerService {
         return cricketerRepository.findByTeam_TeamId(teamId);
     }
 }
- 
