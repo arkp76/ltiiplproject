@@ -1,6 +1,5 @@
 package com.wecp.progressive.entity;
 
-<<<<<<< HEAD
 import java.util.Comparator;
 
 import javax.persistence.CascadeType;
@@ -11,11 +10,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-=======
-import javax.persistence.*;
-import java.util.Comparator;
-
->>>>>>> 23c4a4a596aa7175a7aaebb34068c3fe7893923b
 @Entity
 public class Cricketer implements Comparable<Cricketer> {
     @Id

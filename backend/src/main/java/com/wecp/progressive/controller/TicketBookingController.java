@@ -1,7 +1,6 @@
 package com.wecp.progressive.controller;
 
 import com.wecp.progressive.entity.TicketBooking;
-<<<<<<< HEAD
 import com.wecp.progressive.service.impl.TicketBookingServiceImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,27 +42,5 @@ public class TicketBookingController {
     @GetMapping("/user/{email}")
     public ResponseEntity<List<TicketBooking>> getBookingsByUserEmail(@PathVariable String email) {
         return new ResponseEntity<>(ticketBookingServiceImpl.getBookingsByUserEmail(email),HttpStatus.OK);
-=======
-import org.springframework.http.ResponseEntity;
-
-import java.util.List;
-
-public class TicketBookingController {
-
-    public ResponseEntity<List<TicketBooking>> getAllBookings() {
-        return null;
-    }
-
-    public ResponseEntity<Integer> createBooking(TicketBooking ticketBooking) {
-        return null;
-    }
-
-    public ResponseEntity<Void> cancelBooking(int bookingId) {
-        return null;
-    }
-
-    public ResponseEntity<List<TicketBooking>> getBookingsByUserEmail(String email) {
-        return null;
->>>>>>> 23c4a4a596aa7175a7aaebb34068c3fe7893923b
     }
 }

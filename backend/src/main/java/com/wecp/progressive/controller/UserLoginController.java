@@ -12,8 +12,4 @@ public class UserLoginController {
     public ResponseEntity loginUser(LoginRequest loginRequest) {
         return null;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 23c4a4a596aa7175a7aaebb34068c3fe7893923b
