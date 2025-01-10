@@ -1,5 +1,6 @@
 package com.wecp.progressive.entity;
 
+<<<<<<< HEAD
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -65,4 +66,8 @@ public class TicketBooking {
 
     
 
+=======
+public class TicketBooking {
+
+>>>>>>> 23c4a4a596aa7175a7aaebb34068c3fe7893923b
 }

@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 23c4a4a596aa7175a7aaebb34068c3fe7893923b
 package com.wecp.progressive.dao;
 
 
@@ -168,8 +171,12 @@ public class TeamDAOImpl implements TeamDAO {
         return teams;
     }
 
+<<<<<<< HEAD
 }
 
 
 
 
+=======
+}
+>>>>>>> 23c4a4a596aa7175a7aaebb34068c3fe7893923b
