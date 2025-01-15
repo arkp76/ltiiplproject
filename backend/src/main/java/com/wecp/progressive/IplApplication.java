@@ -9,4 +9,11 @@ public class IplApplication {
         System.out.println("Welcome to Ipl Progressive Project!");
         SpringApplication.run(IplApplication.class, args);
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+
+
+>>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04

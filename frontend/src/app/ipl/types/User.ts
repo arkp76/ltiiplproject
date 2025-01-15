@@ -1,5 +1,6 @@
 
 export class User {
+<<<<<<< HEAD
 userId:string;
 fullName:string;
 username:string;
@@ -24,4 +25,7 @@ this.role = role;
         console.log(`Full Name: ${this.fullName}`);
         console.log(`Email: ${this.email}`);
     }
+=======
+
+>>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04
 }

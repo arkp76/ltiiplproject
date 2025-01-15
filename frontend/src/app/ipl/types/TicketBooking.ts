@@ -1,5 +1,6 @@
 
 export class TicketBooking {
+<<<<<<< HEAD
 bookingId:number;
 email:string;
 matchId:number;
@@ -18,4 +19,7 @@ constructor(bookingId:number,
         console.log(`Email: ${this.email}`);
         console.log(`Number of Tickets: ${this.numberOfTickets}`);
     }
+=======
+
+>>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04
 }

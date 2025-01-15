@@ -25,4 +25,8 @@ private static void loadProperties(){
 public static Connection getConnection() throws SQLException{
     return DriverManager.getConnection(properties.getProperty("spring.datasource.url"), properties.getProperty("spring.datasource.username"), properties.getProperty("spring.datasource.password"));
 }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04

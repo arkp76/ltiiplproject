@@ -1,6 +1,7 @@
 package com.wecp.progressive.controller;
 
 import com.wecp.progressive.dto.LoginRequest;
+<<<<<<< HEAD
 import com.wecp.progressive.dto.LoginResponse;
 import com.wecp.progressive.entity.User;
 import com.wecp.progressive.service.impl.UserLoginServiceImpl;
@@ -59,5 +60,17 @@ public class UserLoginController {
         Integer userId = foundUser.getUserId();
         System.out.println("User Roles: " + role);
         return ResponseEntity.ok(new LoginResponse(token, role, userId));
+=======
+import com.wecp.progressive.entity.User;
+import org.springframework.http.ResponseEntity;
+
+public class UserLoginController {
+    public ResponseEntity<User> registerUser(User user) {
+        return null;
+    }
+
+    public ResponseEntity loginUser(LoginRequest loginRequest) {
+        return null;
+>>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04
     }
 }
