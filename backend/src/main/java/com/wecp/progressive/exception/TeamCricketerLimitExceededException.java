@@ -6,8 +6,4 @@ public class TeamCricketerLimitExceededException extends RuntimeException{
     {
         super(message);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04

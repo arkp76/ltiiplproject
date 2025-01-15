@@ -25,10 +25,6 @@ public class CricketerServiceImplJpa implements CricketerService {
     public CricketerServiceImplJpa(CricketerRepository cricketerRepository) {
         this.cricketerRepository = cricketerRepository;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04
     @Override
     public List<Cricketer> getAllCricketers() throws SQLException {
         return cricketerRepository.findAll();
@@ -50,10 +46,6 @@ public class CricketerServiceImplJpa implements CricketerService {
         sortedCricketer.sort(Comparator.comparing(Cricketer::getExperience));
         return sortedCricketer;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04
     @Override
     public void updateCricketer(Cricketer cricketer) throws SQLException {
         cricketerRepository.save(cricketer);
@@ -70,10 +62,6 @@ public class CricketerServiceImplJpa implements CricketerService {
     public Cricketer getCricketerById(int cricketerId) throws SQLException {
         return cricketerRepository.findByCricketerId(cricketerId);
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04
     @Override
     public List<Cricketer> getCricketersByTeam(int teamId) throws SQLException {
         return cricketerRepository.findByTeam_TeamId(teamId);

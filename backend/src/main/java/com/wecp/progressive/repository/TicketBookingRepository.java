@@ -25,8 +25,4 @@ public interface TicketBookingRepository extends JpaRepository<TicketBooking, In
     @Transactional
     @Query("DELETE FROM TicketBooking t WHERE t.match.matchId IN :matchId")
     void deleteByMatchId(@Param("matchId") int matchId);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04

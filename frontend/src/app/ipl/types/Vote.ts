@@ -1,6 +1,5 @@
 
 export class Vote {
-<<<<<<< HEAD
     voteId: number;
     email: string;
     category: string;
@@ -21,7 +20,4 @@ export class Vote {
     console.log(`Vote ID: ${this.voteId}`);
     console.log(`Email: ${this.email}`);
     }
-=======
-
->>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04
 }

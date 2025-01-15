@@ -1,5 +1,4 @@
 export class Cricketer {
-<<<<<<< HEAD
     cricketerId: number;
     teamId: number;
     cricketerName: string;
@@ -29,14 +28,3 @@ export class Cricketer {
     }
   }
   
-=======
-  
-
-   
-}
-
-
-
-
-
->>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04

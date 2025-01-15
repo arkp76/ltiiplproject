@@ -1,6 +1,5 @@
 
 export class Match {
-<<<<<<< HEAD
  matchId:number;
  firstTeamId:number;
  secondTeamId:number;
@@ -24,7 +23,4 @@ this.winnerTeamId= winnerTeamId;
         console.log(`Match date: ${this.matchDate}`);
         console.log(`Venue: ${this.venue}`);
       }
-=======
- 
->>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04
 }

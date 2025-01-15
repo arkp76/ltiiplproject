@@ -23,34 +23,18 @@ public class MatchServiceImplJpa implements MatchService {
     public MatchServiceImplJpa(MatchRepository matchRepository) {
         this.matchRepository = matchRepository;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04
     @Override
     public List<Match> getAllMatches() throws SQLException {
         return matchRepository.findAll();
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04
     @Override
     public Match getMatchById(int matchId) throws SQLException {
         return matchRepository.findByMatchId(matchId);
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04
     @Override
     public Integer addMatch(Match match) throws SQLException {
         return matchRepository.save(match).getMatchId();
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04
     @Override
     public void updateMatch(Match match) throws SQLException {
         matchRepository.save(match);

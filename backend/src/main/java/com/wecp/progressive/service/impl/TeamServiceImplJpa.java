@@ -40,10 +40,6 @@ public class TeamServiceImplJpa  implements TeamService {
     public TeamServiceImplJpa(TeamRepository teamRepository) {
         this.teamRepository = teamRepository;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> f8df9d574a9e90305800176f3d27753e146d0d04
     @Override
     public List<Team> getAllTeams() throws SQLException {
         return teamRepository.findAll();
